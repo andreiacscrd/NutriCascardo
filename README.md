@@ -1,66 +1,39 @@
 # 🥗 NutriCascardo — Sistema de Gestão Nutricional Premium
 
-Bem-vinda ao **NutriCascardo**, uma plataforma moderna e intuitiva projetada para nutricionistas que buscam excelência no atendimento aos seus pacientes. Com uma interface de alta performance e design premium, o sistema centraliza o acompanhamento clínico, evolução antropométrica e gestão de planos alimentares.
+O **NutriCascardo** é uma plataforma robusta e de alta performance desenvolvida para nutricionistas que buscam modernizar sua prática clínica. O sistema oferece uma experiência de usuário premium, focada em clareza visual, agilidade no atendimento e acompanhamento detalhado da evolução do paciente.
 
-![NutriCascardo UI](https://raw.githubusercontent.com/andreiacscrd/NutriCascardo/main/src/assets/hero.png)
+![Dashboard NutriCascardo](https://raw.githubusercontent.com/andreiacscrd/NutriCascardo/main/public/dashboard.png)
 
-## ✨ Funcionalidades Principais
+## 📖 O que é o projeto?
 
-### 📋 Prontuário Digital Inteligente
-- Cadastro completo de pacientes com anamnese detalhada (pessoal, clínico e hábitos).
-- Organização por abas para acesso rápido aos dados de cada paciente.
-- Interface responsiva com animações fluidas.
+O projeto nasceu da necessidade de um sistema que unisse **estética premium** e **funcionalidade clínica**. Ele resolve problemas comuns de prontuários em papel ou sistemas legados lentos, oferecendo:
+- **Prontuário Inteligente**: Organização de dados pessoais, clínicos e hábitos em uma interface limpa.
+- **Visualização de Dados**: Gráficos automáticos de peso e métricas antropométricas.
+- **Gestão de Retornos**: Alertas visuais para pacientes que precisam de atenção.
+- **Flexibilidade**: Interface adaptável com Modo Escuro/Claro nativo.
 
-### 📈 Evolução Clínica e Antropometria
-- Gráfico dinâmico de evolução de peso sempre visível no perfil do paciente.
-- Registro histórico de medidas (peso, cintura, quadril, % de gordura).
-- Visualização cronológica das consultas realizadas.
+## 🛠️ Como foi desenvolvido? (Dev Journey)
 
-### 🗓️ Gestão de Consultas
-- Registro simplificado de novas consultas com cálculo automático de retorno.
-- Visualização de "Pacientes que precisam de atenção" (sem retorno há mais de 30 dias).
-
-### 🌓 Design e Experiência do Usuário
-- **Modo Escuro e Claro**: Suporte nativo para ambos os temas com transição suave.
-- **Glassmorphism**: Estilo visual moderno com efeitos de transparência e profundidade.
-- **Performance**: Construído com React e Vite para uma navegação instantânea.
+Este projeto foi desenvolvido utilizando uma metodologia moderna de **Pair Programming com IA**, focando em:
+1. **Design System Customizado**: Em vez de bibliotecas genéricas, criamos um sistema de design próprio usando Vanilla CSS para garantir que cada detalhe (sombras, raios de borda, animações) fosse único e luxuoso.
+2. **Arquitetura Escalável**: Utilizamos **React** com **Vite** para máxima velocidade no desenvolvimento e execução.
+3. **Backend as a Service**: O **Supabase** foi escolhido para gerenciar autenticação e banco de dados em tempo real, permitindo uma infraestrutura segura e resiliente sem a complexidade de gerenciar servidores.
+4. **Iteração Rápida**: O desenvolvimento foi feito em ciclos incrementais, onde cada funcionalidade (como o gráfico de evolução ou o formulário de anamnese) foi testada e refinada para garantir harmonia visual.
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Frontend**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
-- **Backend & Auth**: [Supabase](https://supabase.com/) (PostgreSQL + RLS)
-- **Visualização de Dados**: [Recharts](https://recharts.org/)
-- **Ícones**: [Lucide-React](https://lucide.dev/)
-- **Estilização**: Vanilla CSS com variáveis dinâmicas e design responsivo.
+- **Frontend**: React.js, Vite.
+- **Backend**: Supabase (PostgreSQL, Auth, RLS).
+- **Gráficos**: Recharts.
+- **Ícones**: Lucide-React.
+- **Deploy**: Otimizado para Vercel (com suporte a roteamento SPA via `vercel.json`).
 
-## 🛠️ Como Iniciar o Projeto Localmente
+## ⚙️ Configuração Local
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/andreiacscrd/NutriCascardo.git
-   cd NutriCascardo
-   ```
-
-2. **Instale as dependências:**
-   ```bash
-   npm install
-   ```
-
-3. **Configure as variáveis de ambiente:**
-   Crie um arquivo `.env` na raiz do projeto com as suas chaves do Supabase:
-   ```env
-   VITE_SUPABASE_URL=sua_url_aqui
-   VITE_SUPABASE_ANON_KEY=sua_chave_anonima_aqui
-   ```
-
-4. **Inicie o servidor de desenvolvimento:**
-   ```bash
-   npm run dev
-   ```
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para uso profissional exclusivo da Nutricionista Andreia Cascardo.
+1. **Clone:** `git clone https://github.com/andreiacscrd/NutriCascardo.git`
+2. **Instale:** `npm install`
+3. **Ambiente:** Configure o `.env` com `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.
+4. **Rode:** `npm run dev`
 
 ---
-Desenvolvido com ❤️ para a excelência em nutrição.
+*Este sistema é um exemplo de como a tecnologia e o design podem elevar o padrão de atendimento na área da saúde.*
