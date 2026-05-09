@@ -1,16 +1,66 @@
-# React + Vite
+# 🥗 NutriCascardo — Sistema de Gestão Nutricional Premium
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vinda ao **NutriCascardo**, uma plataforma moderna e intuitiva projetada para nutricionistas que buscam excelência no atendimento aos seus pacientes. Com uma interface de alta performance e design premium, o sistema centraliza o acompanhamento clínico, evolução antropométrica e gestão de planos alimentares.
 
-Currently, two official plugins are available:
+![NutriCascardo UI](https://raw.githubusercontent.com/andreiacscrd/NutriCascardo/main/src/assets/hero.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Funcionalidades Principais
 
-## React Compiler
+### 📋 Prontuário Digital Inteligente
+- Cadastro completo de pacientes com anamnese detalhada (pessoal, clínico e hábitos).
+- Organização por abas para acesso rápido aos dados de cada paciente.
+- Interface responsiva com animações fluidas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📈 Evolução Clínica e Antropometria
+- Gráfico dinâmico de evolução de peso sempre visível no perfil do paciente.
+- Registro histórico de medidas (peso, cintura, quadril, % de gordura).
+- Visualização cronológica das consultas realizadas.
 
-## Expanding the ESLint configuration
+### 🗓️ Gestão de Consultas
+- Registro simplificado de novas consultas com cálculo automático de retorno.
+- Visualização de "Pacientes que precisam de atenção" (sem retorno há mais de 30 dias).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🌓 Design e Experiência do Usuário
+- **Modo Escuro e Claro**: Suporte nativo para ambos os temas com transição suave.
+- **Glassmorphism**: Estilo visual moderno com efeitos de transparência e profundidade.
+- **Performance**: Construído com React e Vite para uma navegação instantânea.
+
+## 🚀 Tecnologias Utilizadas
+
+- **Frontend**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Backend & Auth**: [Supabase](https://supabase.com/) (PostgreSQL + RLS)
+- **Visualização de Dados**: [Recharts](https://recharts.org/)
+- **Ícones**: [Lucide-React](https://lucide.dev/)
+- **Estilização**: Vanilla CSS com variáveis dinâmicas e design responsivo.
+
+## 🛠️ Como Iniciar o Projeto Localmente
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/andreiacscrd/NutriCascardo.git
+   cd NutriCascardo
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure as variáveis de ambiente:**
+   Crie um arquivo `.env` na raiz do projeto com as suas chaves do Supabase:
+   ```env
+   VITE_SUPABASE_URL=sua_url_aqui
+   VITE_SUPABASE_ANON_KEY=sua_chave_anonima_aqui
+   ```
+
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para uso profissional exclusivo da Nutricionista Andreia Cascardo.
+
+---
+Desenvolvido com ❤️ para a excelência em nutrição.
